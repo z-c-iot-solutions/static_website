@@ -1,0 +1,39 @@
+{% assign lang = page.lang | default: "en" %}
+{% if lang == "fr" %}
+  {% assign t_home = "Accueil" %}
+  {% assign t_mission = "Mission & Vision" %}
+  {% assign t_community = "Travaux de la communauté" %}
+  {% assign t_contact = "Contact" %}
+{% else %}
+  {% assign t_home = "Home" %}
+  {% assign t_mission = "Mission & Vision" %}
+  {% assign t_community = "Community Work" %}
+  {% assign t_contact = "Contact" %}
+{% endif %}
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/{{ lang }}/">
+      <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="">
+      <span>
+        Z&amp;C IoT Solutions
+        <small>mioty · LoRaWAN</small>
+      </span>
+    </a>
+
+    <nav class="primary-nav" aria-label="Primary">
+      <a href="/{{ lang }}/" {% if page.url == "/" or page.url == "/en/" or page.url == "/fr/" %}aria-current="page"{% endif %}>{{ t_home }}</a>
+      <a href="/{{ lang }}/mission-vision.html" {% if page.url contains "mission-vision" %}aria-current="page"{% endif %}>{{ t_mission }}</a>
+      <a href="/{{ lang }}/community.html" {% if page.url contains "community" %}aria-current="page"{% endif %}>{{ t_community }}</a>
+      <a href="/{{ lang }}/contact.html" {% if page.url contains "contact" %}aria-current="page"{% endif %}>{{ t_contact }}</a>
+    </nav>
+
+    <div style="display:flex; align-items:center; gap:16px;">
+      <div class="lang-switch">
+        <a href="/en{{ page.url | remove_first: '/en' | remove_first: '/fr' }}" class="{% if lang == 'en' %}active{% endif %}">EN</a>
+        <a href="/fr{{ page.url | remove_first: '/en' | remove_first: '/fr' }}" class="{% if lang == 'fr' %}active{% endif %}">FR</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</header>

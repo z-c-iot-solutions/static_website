@@ -1,0 +1,39 @@
+title: Z&C IoT Solutions
+description: "LPWAN consultancy & training — mioty and LoRaWAN, from sensor to cloud."
+url: "" # fill in once you know your github.io URL, e.g. https://your-username.github.io
+baseurl: "" # fill in with "/your-repo-name" if this is a project site, leave "" for a user/org site
+
+# Community submissions collection — each file in _community/ is one
+# contributor's write-up. Front matter fields used across the site:
+#   title, author, field, lang (en|fr), date, summary, links
+collections:
+  community:
+    output: true
+    permalink: /:collection/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "community"
+    values:
+      layout: "community-post"
+  - scope:
+      path: "en"
+    values:
+      lang: en
+      layout: "default"
+  - scope:
+      path: "fr"
+    values:
+      lang: fr
+      layout: "default"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - Gemfile
+  - Gemfile.lock
