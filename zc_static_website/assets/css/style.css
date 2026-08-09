@@ -108,7 +108,7 @@ img { max-width: 100%; display: block; }
   font-size: 15px;
   color: var(--paper);
 }
-.brand img { height: 26px; width: auto; }
+.brand img { height: 150px; width: auto; }
 .brand small {
   display: block;
   color: var(--muted);
@@ -257,6 +257,12 @@ nav.primary-nav a[aria-current="page"] {
 }
 @media (max-width: 760px) { .grid-2 { grid-template-columns: 1fr; } }
 
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+@media (max-width: 900px) { .grid-3 { grid-template-columns: 1fr; } }
 .card {
   background: var(--surface);
   border: 1px solid var(--line);

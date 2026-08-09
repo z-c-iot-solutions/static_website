@@ -2,6 +2,7 @@
 title: Mission & Vision
 lang: fr
 permalink: /fr/mission-vision.html
+published: false
 ---
 
 <div class="section">

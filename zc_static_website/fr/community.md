@@ -2,6 +2,7 @@
 title: Travaux de la communauté
 lang: fr
 permalink: /fr/community.html
+published: false
 ---
 
 <div class="section">
