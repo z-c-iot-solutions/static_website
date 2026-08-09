@@ -15,15 +15,9 @@
 <loc>http://0.0.0.0:4000/fr/contact.html</loc>
 </url>
 <url>
-<loc>http://0.0.0.0:4000/</loc>
-</url>
-<url>
 <loc>http://0.0.0.0:4000/en/</loc>
 </url>
 <url>
 <loc>http://0.0.0.0:4000/fr/</loc>
-</url>
-<url>
-<loc>http://0.0.0.0:4000/static_website/</loc>
 </url>
 </urlset>

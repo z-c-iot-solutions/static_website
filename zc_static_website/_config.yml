@@ -1,6 +1,6 @@
 title: Z&C IoT Solutions
-description: "LPWAN consultancy & training — mioty and LoRaWAN, from sensor to cloud."
-url: "" # fill in once you know your github.io URL, e.g. https://your-username.github.io
+description: "LPWAN consultancy & training, mioty and LoRaWAN, from sensor to cloud."
+url: "https://zc-iotsolutions.com" # fill in once you know your github.io URL, e.g. https://your-username.github.io
 baseurl: "" # fill in with "/your-repo-name" if this is a project site, leave "" for a user/org site
 
 # Community submissions collection — each file in _community/ is one
