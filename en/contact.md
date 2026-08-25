@@ -11,9 +11,9 @@ permalink: /en/contact.html
     <p class="lede">Any questions? Just reach out.</p>
 
  <div class="card" style="max-width:560px; margin-top:28px; border-color: var(--brand);">
-  <h3>Free 30-Minute Intro Call</h3>
+  <h3>Free 15-Minute Intro Call</h3>
   <p>
-    Let's talk through your project: a free 30-minute call, online, no
+    Let's talk through your project: a free 15-minute call, online, no
     strings attached.
   </p>
   <a class="btn primary" href="mailto:support@zc-iotsolutions.com?subject=Free%2030-minute%20call" style="margin-top:16px;">Book now</a>

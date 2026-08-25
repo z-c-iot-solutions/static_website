@@ -11,9 +11,9 @@ permalink: /fr/contact.html
     <p class="lede">Des questions? N'hésitez pas à nous contacter.</p>
 
   <div class="card" style="max-width:560px; margin-top:28px; border-color: var(--brand);">
-  <h3>Appel Gratuit de 30 Minutes</h3>
+  <h3>Appel Gratuit de 15 Minutes</h3>
   <p>
-    Parlons de votre projet, un appel gratuit de 30 minutes, en ligne,
+    Parlons de votre projet, un appel gratuit de 15 minutes, en ligne,
     sans engagement.
   </p>
 <a class="btn primary" href="mailto:support@zc-iotsolutions.com?subject=Appel%20gratuit%20de%2030%20minutes" style="margin-top:16px;">Réservez maintenant</a>
