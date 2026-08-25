@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} · Z&amp;C IoT Solutions</title>
+  <meta name="description" content="{{ page.summary }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  {% include header.html %}
+  <main>
+    <div class="section">
+      <div class="wrap">
+        <p class="node-meta">
+          <span class="id">NODE — {{ page.field | default: "General" }}</span><br>
+          {{ page.date | date: "%Y-%m-%d" }} · {{ page.author }} · {{ page.lang | upcase }}
+        </p>
+        <h1 style="font-family: var(--mono); font-size: 32px; margin: 14px 0 24px;">{{ page.title }}</h1>
+        <div class="prose">
+          {{ content }}
+        </div>
+        {% if page.links %}
+        <p style="margin-top:32px;">
+          {% for link in page.links %}
+            <a class="btn" href="{{ link }}" target="_blank" rel="noopener">{{ link }}</a>
+          {% endfor %}
+        </p>
+        {% endif %}
+      </div>
+    </div>
+  </main>
+  {% include footer.html %}
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

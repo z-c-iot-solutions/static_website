@@ -1,0 +1,29 @@
+<svg class="hero-map" viewBox="0 0 1120 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <!-- faint survey grid -->
+  <g stroke="#223252" stroke-width="1">
+    <line x1="0" y1="70" x2="1120" y2="70"/>
+    <line x1="0" y1="210" x2="1120" y2="210"/>
+    <line x1="0" y1="350" x2="1120" y2="350"/>
+    <line x1="280" y1="0" x2="280" y2="420"/>
+    <line x1="560" y1="0" x2="560" y2="420"/>
+    <line x1="840" y1="0" x2="840" y2="420"/>
+  </g>
+
+  <!-- gateway (central receiver) -->
+  <circle cx="840" cy="120" r="5" fill="#F5A623"/>
+  <circle cx="840" cy="120" r="12" fill="none" stroke="#F5A623" stroke-width="1" opacity="0.5"/>
+
+  <!-- distant sensor nodes -->
+  <circle cx="120" cy="300" r="3.5" fill="#3D7BEF"/>
+  <circle cx="260" cy="90"  r="3.5" fill="#3D7BEF"/>
+  <circle cx="410" cy="340" r="3.5" fill="#3D7BEF"/>
+  <circle cx="560" cy="60"  r="3.5" fill="#3D7BEF"/>
+  <circle cx="690" cy="260" r="3.5" fill="#3D7BEF"/>
+  <circle cx="980" cy="300" r="3.5" fill="#3D7BEF"/>
+  <circle cx="1040" cy="70" r="3.5" fill="#3D7BEF"/>
+
+  <!-- long, sparse pulse paths back to the gateway -->
+  <path class="pulse-path" d="M120,300 C 400,420 650,260 840,120" fill="none" stroke="#3D7BEF" stroke-width="1.2" opacity="0.6"/>
+  <path class="pulse-path" d="M410,340 C 550,300 700,220 840,120" fill="none" stroke="#3D7BEF" stroke-width="1.2" opacity="0.4"/>
+  <path class="pulse-path" d="M980,300 C 920,240 880,180 840,120" fill="none" stroke="#3D7BEF" stroke-width="1.2" opacity="0.5"/>
+</svg>

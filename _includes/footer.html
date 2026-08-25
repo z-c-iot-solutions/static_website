@@ -1,0 +1,13 @@
+{% assign lang = page.lang | default: "en" %}
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; {{ 'now' | date: "%Y" }} Z&amp;C IoT Solutions GbR | Weingarten, Baden-Württemberg</span>
+    <span>
+      {% if lang == "fr" %}
+        La connaissance : unique matière première inépuisable
+      {% else %}
+        We give you knowledge, and knowledge is power.
+      {% endif %}
+    </span>
+  </div>
+</footer>
